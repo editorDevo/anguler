@@ -26,6 +26,11 @@ app.directive('moveEvent', ['$document',function($document) {
                 stopPotion = null;
                 TargertStart = null;
             });
+            element.on('mouseout',function(e){
+                isMove = false;
+                stopPotion = null;
+                TargertStart = null;
+            });
             element.on('mousemove',function(e){
                 //拖动某面板
                 if(isMove){

@@ -254,8 +254,7 @@ html,html body{
 .select-tool{
     position: absolute;; z-index: 21000;
     top: 80px; left: 10px;
-    min-width: 120px; max-width: 220px;
-    width: 120px;
+    width: 72px;
     background: #333; border: 1px solid #222;
     border-radius: 3px;
 }
@@ -318,8 +317,21 @@ html,html body{
 .fl-r{
     float: right;;
 }
-
-
+/*工具面板*/
+.tool-box-icon{ padding: 0 5px;}
+.tool-box-icon .item{
+    padding: 3px 5px; text-align: center;
+}
+.tool-box-icon .item a{
+    display: block;; width: 100%;
+    height: 20px; font-size: 14px; color: #999;
+}
+.tool-box-icon .item a:hover{
+    background: #343434;
+}
+.tool-box-icon .item a.active{
+    background: #222; color: #999;
+}
 
 
 
