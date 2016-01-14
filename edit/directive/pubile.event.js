@@ -135,6 +135,7 @@ app.directive('pubileEvent', ['$document',function($document) {
                            break;
 
                    }
+                   this.currentKeyValue = mainKey==''? this.currentKeyValue : mainKey;
                    return mainKey=='' ? false :true;
                }
            };
@@ -175,7 +176,7 @@ app.directive('pubileEvent', ['$document',function($document) {
 
                if(HotKey.currentMainKey!=null){
                    for(var k in keyEvent){
-                       if(keyValue== k.split('+')[1]){
+                       if(HotKey.currentKeyValue== k.split('+')[0]&&keyValue== k.split('+')[1]){
                            keyEvent[k](e);
                            return;
                        }
