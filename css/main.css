@@ -53,7 +53,7 @@ select{
 }
 
 .table{
-    display: table;; width: 100%;height: 100%;
+    display: table;; width: 100%;height: 100%; margin: 0 0;max-width: none;
 }
 .td{
     display: table-cell; vertical-align: middle;; width: 100%;
@@ -251,9 +251,42 @@ html,html body{
     border: 1px solid #b7b7b7;background: #7f7f7f;border-radius: 3px;
 }
 
+#page-change-tab{
+    position: fixed;; top: 58px;left: 0; width: 100%;
+    z-index: 9998;
+    background: #464646; border-bottom: 1px solid #2b2b2b;
+}
+#page-change-tab ul li{
+    float: left;; display: inline-block;; position: relative;;
+}
+#page-change-tab ul li a{
+    display: block;; width: 120px; max-width: 220px; overflow: hidden;;
+    line-height: 24px;padding:0 10px;height: 24px;
+    background: #3f3f3f; color: #999; position: relative;;
+    border-right: 1px solid #383838;
+}
+#page-change-tab ul li a i{
+    position: absolute;; top: 50%; right: 5px;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+#page-change-tab ul li a.notSave:after{
+    position: absolute;; content: '*';
+    z-index: 5;top: -5px; right: 12px;color: #579dcc;
+}
+#page-change-tab ul li a.active{
+    background: #303030;color: #fff;
+}
+#page-change-tab ul li a.notSave{
+    color: #579dcc;
+}
+#page-change-tab ul li a.new-add{
+    color: #68cc7e;
+}
+
 .select-tool{
     position: absolute;; z-index: 21000;
-    top: 80px; left: 10px;
+    top: 90px; left: 10px;
     width: 72px;
     background: #333; border: 1px solid #222;
     border-radius: 3px;
@@ -272,7 +305,7 @@ html,html body{
 
 .setting-tool{
     position: absolute;; z-index: 21000;
-    top: 80px; right: 10px;
+    top: 90px; right: 10px;
     min-width: 160px; max-width: 160px;
     width: 120px;
     background: #333; border: 1px solid #222;
@@ -284,13 +317,19 @@ html,html body{
 .on-cache-move{ z-index: 21005;}
 
 #sence{
-    position: fixed;;z-index: 100; top: 58px;
+    position: fixed; top: 83px;
     bottom: 24px; width: 100%; overflow: auto;
     z-index: 1000;
     background: #303030;
 }
+#layer-main{
+     width: 320px;
+    height: 560px;
+    margin: 0 auto;
+    background: #fff;
+}
 #window-stute{
-    position: fixed;;z-index: 200;left: 0; bottom:0 ;
+    position: fixed;;z-index: 1005;left: 0; bottom:0 ;
     color: #666; background: #333;
     width: 100%; height: 24px; line-height: 24px; padding-left: 10px;
     box-shadow: 0 -1px #222;border-top: 1px solid #484848;
@@ -332,7 +371,22 @@ html,html body{
 .tool-box-icon .item a.active{
     background: #222; color: #999;
 }
+.page-layout-preview-list{
+    color: #999;
+}
+.page-layout-preview-list .item{
+    border-bottom: 1px solid #222;
+    padding:8px 10px; position: relative;;
+}
+.page-layout-preview-list .item a{ color: #fff;}
+.page-layout-preview-list .item:last-child{
+    border-bottom:0;
+}
 
-
-
+.page-layout-preview-list .item .item-page{
+    background: #fff; width: 100%; height: 80px;
+}
+.page-layout-preview-list .item .page-name{
+    padding-left: 5px;
+}
 

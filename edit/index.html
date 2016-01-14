@@ -64,16 +64,34 @@
         </ul>
     </div>
 
+    <!--todo 页面TAB-->
+    <div id="page-change-tab">
+        <ul>
+            <li><a class="active notSave" href="javascript:;" >[第1页] 未保存页面 <i class="ion-ios-close-empty"></i></a></li>
+            <li><a href="javascript:;" >[第2页] 已保存页面 <i class="ion-ios-close-empty"></i></a></li>
+            <li><a class="new-add" href="javascript:;" >[第3页] 新加页面 <i class="ion-ios-close-empty"></i></a></li>
+        </ul>
+    </div>
 
+    <!--todo 舞台-->
     <div id="sence"
          ng-controller="sence"
-         sence-dir ></div>
+         sence-dir >
+            <div class="table">
+                <div class="td" style="height: 100%;">
+                    <div id="layer-main">fwa</div>
+                </div>
+            </div>
+
+         </div>
+
+
 
     <!--todo 工具选择面板-->
 
     <div id="controler-main-quick"
          class="select-tool"
-         a="{{hidenTool}}"
+         style="right: 180px;"
          ng-class="{true:'tool-hidden',false:'tool-show'}[hidenTool]"
          window-type="tool-window"
          ng-controller="mainQuick"
@@ -103,12 +121,29 @@
          ng-controller="mainPage"
          move-event >
         <h3><a class="fl-r" href="javascript:;" ><i class="ion-ios-close-empty"></i></a>页面面板</h3>
-        fwafwa
+        <div class="page-layout-preview-list">
+            <div class="table item">
+                <a class="td td-2" href="javascript:;"><i class="ion-eye"></i></a>
+                <div class="td td-4"><div class="ads-row item-page">页面小图</div></div>
+                <div class="td td-6">
+                    <div class="ads-row page-name">页面1</div>
+                </div>
+            </div>
+            <div class="table item">
+                <a class="td td-2" href="javascript:;"><i class="ion-eye-disabled"></i></a>
+                <div class="td td-4"><div class="ads-row item-page">页面小图</div></div>
+                <div class="td td-6">
+                    <div class="ads-row page-name">页面1</div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <!--todo 动画面板-->
     <div id="controler-main-animation"
          class="setting-tool"
+         style="right: 180px;top: 180px;"
          window-type="tool-window"
          ng-class="{true:'tool-hidden',false:'tool-show'}[hidenTool]"
          ng-controller="mainAnimation"
@@ -120,6 +155,7 @@
     <!--todo 动画轨迹面板-->
     <div id="controler-main-animation-guide"
          class="setting-tool"
+         style="right: 180px;"
          window-type="tool-window"
          ng-class="{true:'tool-hidden',false:'tool-show'}[hidenTool]"
          ng-controller="mainAnimationGuide"

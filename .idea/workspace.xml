@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51830d59-cb1e-4198-9144-d7723f1c9b7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit/directive/pubile.event.js" afterPath="$PROJECT_DIR$/edit/directive/pubile.event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit/index.html" afterPath="$PROJECT_DIR$/edit/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
     </list>
     <ignored path="anguler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +43,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/edit/index.html" />
         <option value="$PROJECT_DIR$/edit/directive/pubile.event.js" />
+        <option value="$PROJECT_DIR$/edit/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -148,6 +149,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anguler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anguler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -205,11 +220,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/edit/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="34" selection-start="2948" selection-end="2948" vertical-scroll-proportion="0.35514018" vertical-offset="1083" max-vertical-offset="2774" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edit/directive/move.event.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="25" selection-start="763" selection-end="763" vertical-scroll-proportion="0.21493213" vertical-offset="171" max-vertical-offset="1083">
@@ -221,6 +231,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="151" column="26" selection-start="5238" selection-end="5238" vertical-scroll-proportion="-0.22624435" vertical-offset="3069" max-vertical-offset="4370">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="344" column="27" selection-start="9704" selection-end="9704" vertical-scroll-proportion="0.66312057" vertical-offset="5975" max-vertical-offset="7562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="22" selection-start="3482" selection-end="3482" vertical-scroll-proportion="0.4228972" vertical-offset="626" max-vertical-offset="1672">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
