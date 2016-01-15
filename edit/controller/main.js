@@ -21,6 +21,13 @@ app.controller('myCtrl', ['$scope',function($scope) {
     $scope.mouseFouceTargert = null; //鼠标点击的目标
 
     $scope.copyItemCache = null;
+    $scope.mouseType = 'cursor-default';//光标类型
+    // [cursor-move] 拖动
+    // [cursor-pencil] 绘制图形
+    // [cursor-txt] 文本
+    // [cursor-circular] 圆形
+    // [cursor-square] 正方形
+
     $scope.isCut = false; //是否是剪切
 
     $scope.hidenTool = false; //是否隐藏工具面板

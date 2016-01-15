@@ -327,7 +327,30 @@ html,html body{
     position: absolute;; top: 0; left: 0;bottom: 0; right: 0;
     z-index: 1;
 }
-#sence .mod-sence{position: relative;z-index: 2;}
+#sence .mod-sence{position: relative;z-index: 2; }
+
+#sence.cursor-move{
+    cursor: url('../icon/move.ico'), default;
+}
+#sence.cursor-pencil{
+    cursor: url('../icon/pencil.ico'), default;
+}
+#sence.cursor-txt{
+    cursor: url('../icon/txt.ico'), default;
+}
+
+#sence.cursor-circular{
+    cursor: url('../icon/circular.ico'), default;
+}
+#sence.cursor-square{
+    cursor: url('../icon/square.ico'), default;
+}
+
+
+
+
+
+
 #layer-main{
      width: 320px;
     height: 560px;
@@ -394,6 +417,11 @@ html,html body{
 }
 .page-layout-preview-list .item .page-name{
     padding-left: 5px;
+}
+
+
+.tool-box-icon .item a{
+    cursor: default;
 }
 
 /*标尺*/
