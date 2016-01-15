@@ -26,10 +26,21 @@ app.controller('myCtrl', ['$scope',function($scope) {
     $scope.hidenTool = false; //是否隐藏工具面板
     $scope.$on('updataToolStute',function(evt,data){
         $scope.hidenTool = data;
+		console.log(data)
         //向下广播数据
         $scope.$broadcast('changeHidenTool',$scope.hidenTool);
     });
 
+
+
+
+	$scope.hidenRuler = false; //是否隐藏标尺
+    $scope.$on('updataRulerStute',function(evt,data){
+        $scope.hidenRuler = data;
+		console.log(data)
+        //向下广播数据
+        $scope.$broadcast('changeHidenRuler',$scope.hidenRuler);
+    });
 
 
 

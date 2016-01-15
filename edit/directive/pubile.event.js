@@ -22,7 +22,15 @@ app.directive('pubileEvent', ['$document',function($document) {
                 console.log('=Ctrl+Z=撤销返回上一步');
                 console.groupEnd();
             }
-
+			,'Ctrl+R' : function(e){
+                //显示或隐藏标尺
+                console.group();
+                console.info('=keyEvent=');
+                console.log('=Tab=显示或隐藏标尺');
+                console.groupEnd();
+                scope.hidenRuler = (scope.hidenRuler) ? false:true;
+                scope.$emit('updataRulerStute',scope.hidenRuler);
+            }
             ,'Ctrl+A' : function(e){
                    //全选
                    console.group();

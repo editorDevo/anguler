@@ -19,12 +19,14 @@
     <script src="controller/mainPage.js"></script>
     <script src="controller/mainAnimation.js"></script>
     <script src="controller/mainAnimationGuide.js"></script>
+    <script src="controller/ruler.js"></script>
 
     <!--//todo directive-->
     <script src="directive/main.js"></script>
     <script src="directive/sence.js"></script>
     <script src="directive/pubile.event.js"></script>
     <script src="directive/move.event.js"></script>
+    <script src="directive/ruler.js"></script>
 
 </head>
 <body body-directive >
@@ -72,7 +74,16 @@
             <li><a class="new-add" href="javascript:;" >[第3页] 新加页面 <i class="ion-ios-close-empty"></i></a></li>
         </ul>
     </div>
-
+	
+    
+    <!--todo 标尺-->
+    <div id="left-ruler" class="left-ruler ruler" ruler-dir 
+      ng-class="{true:'tool-hidden',false:'tool-show'}[hidenRuler]"
+    ng-controller="ruler"></div>
+    <div id="top-ruler" class="top-ruler ruler" ruler-dir 
+      ng-class="{true:'tool-hidden',false:'tool-show'}[hidenRuler]"
+    ng-controller="ruler"></div>
+    
     <!--todo 舞台-->
     <div id="sence"
          ng-controller="sence"
