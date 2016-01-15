@@ -26,7 +26,8 @@ app.directive('senceDir', ['$document','$compile',function($document,$compile) {
 
 
             element.on('contextmenu',function(e){
-                showMenu(e);
+                if(angular.element(e.target).attr('right-clickprivate')!=='private') showMenu(e);
+
             });
 
         }
@@ -39,7 +40,6 @@ app.directive('rightClick', ['$document',function($document) {
   return {
       link:function(scope,element,attr){
           // remove移除创建的元素
-          console.log(element);
           element.on('mousedown',function(){
               element.remove();
           });
