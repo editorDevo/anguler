@@ -27,6 +27,8 @@
     <script src="directive/pubile.event.js"></script>
     <script src="directive/move.event.js"></script>
     <script src="directive/ruler.js"></script>
+    <script src="directive/toolmanger.js"></script>
+    <script src="directive/toolpick.js"></script>
 
 </head>
 <body body-directive >
@@ -86,7 +88,7 @@
     
     <!--todo 舞台-->
     <div id="sence"
-         class="cursor-move"
+         class="cursor-{{ActiveToolType}}"
          ng-controller="sence"
          sence-dir
           >
@@ -110,20 +112,7 @@
          ng-controller="mainQuick"
          move-event >
         <h3>工具</h3>
-        <div class="ads-row tool-box-icon">
-            <div class="ads-c-6 item"><a class="active" href="javascript:;" ><i class="ion-arrow-move"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="fa fa-circle-thin"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="fa fa-square-o"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="ion-android-create"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="glyphicon glyphicon-text-width"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="ion-images"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="fa fa-puzzle-piece"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="ion-music-note"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="ion-android-film"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="fa fa-search"></i></a></div>
-            <div class="ads-c-6 item"><a href="javascript:;" ><i class="fa fa-eyedropper"></i></a></div>
-            <div class="ads-c-6 item">wfa</div>
-        </div>
+        <div class="ads-row tool-box-icon" tool-manger ></div>
     </div>
 
     <!--todo 页面选择选择面板-->

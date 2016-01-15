@@ -16,38 +16,47 @@ app.controller('myCtrl', ['$scope',function($scope) {
     $scope.selectedItem = null; //选择组件 选择就是object
     $scope.isSelectedItem = true; //是否选择了某组件 触发快捷键
 
-    $scope.ToolType = null; //工具的类型
+
+
 
     $scope.mouseFouceTargert = null; //鼠标点击的目标
 
     $scope.copyItemCache = null;
-    $scope.mouseType = 'cursor-default';//光标类型
-    // [cursor-move] 拖动
-    // [cursor-pencil] 绘制图形
-    // [cursor-txt] 文本
-    // [cursor-circular] 圆形
-    // [cursor-square] 正方形
 
     $scope.isCut = false; //是否是剪切
 
     $scope.hidenTool = false; //是否隐藏工具面板
     $scope.$on('updataToolStute',function(evt,data){
         $scope.hidenTool = data;
-		console.log(data)
         //向下广播数据
         $scope.$broadcast('changeHidenTool',$scope.hidenTool);
     });
 
 
 
-
+    //todo 是否隐藏标尺====================================================
 	$scope.hidenRuler = false; //是否隐藏标尺
     $scope.$on('updataRulerStute',function(evt,data){
         $scope.hidenRuler = data;
-		console.log(data)
         //向下广播数据
         $scope.$broadcast('changeHidenRuler',$scope.hidenRuler);
     });
+
+    //todo 工具类型=========================================================
+    $scope.ActiveToolType = 'default'; //工具的类型 [cursor-default]
+    // [cursor-move] 拖动
+    // [cursor-pencil] 绘制图形
+    // [cursor-txt] 文本
+    // [cursor-circular] 圆形
+    // [cursor-square] 正方形
+    $scope.$on('updataActiveToolType',function(evt,data){
+        $scope.ActiveToolType = data;
+        //向下广播数据
+        $scope.$broadcast('changeActiveToolType',$scope.ActiveToolType);
+        console.log(data);
+    });
+
+
 
 
 
