@@ -20,30 +20,32 @@ app.directive('moveEvent', ['$document',function($document) {
                 } : null;
                 angular.element(document.querySelector('.on-drap-window')).removeClass('on-drap-window');
                 angular.element(element).addClass('on-drap-window');
+				//绑定move事件
+				document.body.addEventListener("mousemove",move,false);
             });
             element.on('mouseup',function(e){
+				if(isMove){
+					//释放move事件
+					document.body.removeEventListener("mousemove",move,false);
+				}
                 isMove = false;
                 stopPotion = null;
                 TargertStart = null;
+				
             });
-            element.on('mouseout',function(e){
-                isMove = false;
-                stopPotion = null;
-                TargertStart = null;
-            });
-            element.on('mousemove',function(e){
-                //拖动某面板
+			
+			function move(e){
+				//拖动某面板
                 if(isMove){
                     var X = e.pageX;
                     var Y = e.pageY;
                     var moveX = X - stopPotion.pageX;
                     var moveY = Y - stopPotion.pageY;
-
                     angular.element(element)[0].style['top']=TargertStart.y +moveY + 'px';
                     angular.element(element)[0].style['left']=TargertStart.x +moveX + 'px';
 
                 }
-            });
+			}
         }
     }
 
